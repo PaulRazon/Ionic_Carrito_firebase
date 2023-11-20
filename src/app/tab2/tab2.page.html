@@ -44,5 +44,8 @@
   <ion-item>
     <ion-label>Total:</ion-label>
     <ion-note slot="end" class="total-amount">{{ cart.total | currency:'MXN':'symbol':'1.2-2' }}</ion-note>
+    <ion-button (click)="confirmProducts()" expand="block" fill="clear" shape="round">
+      Comprar <ion-icon name="card-outline"></ion-icon>
+    </ion-button>
   </ion-item>
 </ion-content>
